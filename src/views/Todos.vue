@@ -1,18 +1,22 @@
 <template>
-  <div id="app">
-   <h1>To do app</h1>
-<!--    <AddTodo @add-todo="addTodo"/>-->
+  <div>
+    <h2>To do app</h2>
+    <AddTodo @add-todo="addTodo"/>
     <hr>
-<!--    <TodoList v-bind:todos="todos" @remove-todo="removeTodo"/>-->
-    <router-view/>
+    <TodoList v-bind:todos="todos" @remove-todo="removeTodo"/>
   </div>
 </template>
+<!--<script>-->
+<!--export default {-->
+<!--name: "Todos"-->
+<!--}-->
+<!--</script>-->
 
 <script>
 import TodoList from "@/components/TodoList";
 import AddTodo from "@/components/AddTodo";
 export default {
-  name: 'app',
+  name: 'todos',
   data() {
     return {
       todos: []
@@ -35,27 +39,8 @@ export default {
     }
   }
 }
-
 </script>
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
+<style scoped>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
