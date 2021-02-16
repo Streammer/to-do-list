@@ -1,16 +1,12 @@
 <template>
   <div id="app">
    <h1>To do app</h1>
-<!--    <AddTodo @add-todo="addTodo"/>-->
     <hr>
-<!--    <TodoList v-bind:todos="todos" @remove-todo="removeTodo"/>-->
     <router-view/>
   </div>
 </template>
 
 <script>
-import TodoList from "@/components/TodoList";
-import AddTodo from "@/components/AddTodo";
 export default {
   name: 'app',
   data() {
@@ -24,15 +20,10 @@ export default {
         .then(json => this.todos=json)
   },
   components: {
-    TodoList, AddTodo
+
   },
   methods: {
-    removeTodo(id) {
-      this.todos = this.todos.filter(t =>t.id !== id)
-    },
-    addTodo(todo) {
-      this.todos.push(todo)
-    }
+
   }
 }
 

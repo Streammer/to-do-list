@@ -11,8 +11,8 @@
       and more recently with desktop publishing software like Aldus PageMaker including
       versions of Lorem Ipsum.
     </p>
-
-    <router-link :to="{ name: 'todo' }">Todo</router-link>
+<!--    <router-link :to="{ name: 'todo' }">Todos</router-link>-->
+    <router-link to="/todos">Todos</router-link>
   </div>
 </template>
 
