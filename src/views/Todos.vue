@@ -6,7 +6,7 @@
     <select v-model="filter">
       <option value="all">All</option>
       <option value="completed">Completed</option>
-      <option value="notcompleted">Not completed</option>
+      <option value="not-completed">Not completed</option>
     </select>
     <hr>
     <Loader v-if="loading"/>
