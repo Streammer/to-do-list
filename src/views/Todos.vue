@@ -47,6 +47,7 @@ export default {
   // },
   computed: {
     filteredTodos(){
+      console.log(this.todos)
       if(this.filter === "all"){
         return this.todos
       }
